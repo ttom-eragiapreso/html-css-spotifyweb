@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Spotify</title>
@@ -31,19 +32,58 @@
             <span>Home</span>
           </div>
 
-          <div>
+          <div class="inactive">
             <img src="./spotify/img/search.svg" alt="magnifying glass">
             <span>Cerca</span>
           </div>
 
-          <div>
+          <div class="inactive">
             <img src="./spotify/img/libreria.svg" alt="library">
             <span>La tua libreria</span>
           </div>
 
+          <h3>Playlist</h3>
+
+          <div class="inactive">
+            <i class="fa-regular fa-square-plus"></i>
+            <span>Crea Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+          
+          <div class="inactive">
+            <span>Nome Playlist</span>
+          </div>
+
         </div>
 
+
+
+
         <div class="aside-bottom">
+
           <img src="./spotify/img/download.svg" alt="download">
           <span>Installa app</span>
           <hr>
@@ -70,9 +110,54 @@
 
 
   <footer>
-    <div class="footer-left"></div>
-    <div class="footer-center"></div>
-    <div class="footer-right"></div>
+    <div class="footer-left d-flex justify-content-space-between align-items-center">
+      <img src="./spotify/img/sinister.jpeg" alt="sinister" class="img-small">
+
+      <div class="song-info">
+        <p class="artist-name">Sinister</p>
+        <p class="song-name">Brano Nome</p>
+      </div>
+
+      <div class="song-actions">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </div>
+    </div>
+
+    <div class="footer-center d-flex f-column justify-content-center">
+
+      <div class="playhead h-50 d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+      </div>
+
+      <div class="song-progress h-50 d-flex justify-content-center align-items-center">
+        <span class="time-elapsed">0:25</span>
+        <span class="timeline">
+          <span class="timeline-progress"></span>
+        </span>
+        <span class="time-remaining">4:35</span>
+      </div>
+
+    </div>
+
+    <div class="footer-right d-flex justify-content-space-between align-items-center">
+
+      <div class="options">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-display"></i>
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
+
+      <span class="timeline">
+        <span class="timeline-progress"></span>
+      </span>
+
+    </div>
+
   </footer>
 </body>
 </html>
