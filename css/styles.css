@@ -12,6 +12,14 @@ body {
 
 
 
+/* TOP SECTION */
+
+.top-section {
+  height: calc(100vh - 120px);
+  display: flex;
+}
+
+
 /* HEADER */
 
 header {
@@ -21,9 +29,11 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-
-  /*  */
   color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 }
 
 /* ASIDE */
@@ -38,22 +48,6 @@ aside {
 }
 
 
-/* FOOTER */
-
-footer {
-  height: 120px;
-  background-color: #282828;
-  /*  */
-  color: white;
-}
-
-
-/* TOP SECTION */
-
-.top-section {
-  height: calc(100vh - 120px);
-  display: flex;
-}
 
 /* MAIN */
 
@@ -64,4 +58,48 @@ main {
   padding: 0 20px;
   padding-top: 130px;
   color: white;
+}
+
+
+.btn {
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 99999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  height: 120px;
+  background-color: #282828;
+  /*  */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-left, .footer-right {
+  height: inherit;
+  width: 15%;
+  background-color: red;
+}
+
+.footer-center {
+  height: inherit;
+  width: 50%;
+  background-color: green;
 }
