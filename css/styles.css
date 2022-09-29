@@ -36,6 +36,11 @@ ul li a {
   text-transform: uppercase;
 }
 
+ul li a:hover {
+  color: white;
+} 
+
+
 /* UTILITIES */
 
 .d-flex {
@@ -89,6 +94,11 @@ ul li a {
   border-radius: 50%;
 }
 
+
+.inactive:hover {
+  color: white;
+  cursor: pointer;
+}
 /* TOP SECTION */
 
 .top-section {
@@ -112,6 +122,16 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding-right: 10px;
+}
+
+.btn {
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 99999px;
+}
+
+.btn:hover {
+  transform: scale(1.06);
 }
 
 /* ASIDE */
@@ -160,6 +180,18 @@ aside img {
   margin-top: auto;
 }
 
+.aside-bottom .img-container-small {
+  display: inline-block;
+  background-color: #7d7f837c;
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+
+.img-container-small img {
+  transform: scale(0.6);
+  vertical-align: middle;
+}
+
 .playlist-list {
   overflow: auto;
   height: calc(100% - 200px);
@@ -176,12 +208,6 @@ main {
   color: white;
 }
 
-
-.btn {
-  padding: 10px 40px;
-  border: 1px solid white;
-  border-radius: 99999px;
-}
 
 main .menu {
   height: 50px;
@@ -244,6 +270,14 @@ footer {
   width: 60px;
 }
 
+.footer-left .song-actions i {
+  color: #7d7f83;
+}
+
+.footer-left .song-actions i:hover {
+  color: white;
+}
+
 .footer-center {
   height: inherit;
   width: 50%;
@@ -254,16 +288,16 @@ footer {
   height: 6px;
   width: 530px;
   position: relative;
-  border: 1px solid white;
+  background-color: #5a5a5a;
   border-radius: 5px;
 }
 
 .timeline-progress {
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 0;
+  left: 0;
   height: 6px;
-  border: 1px solid red;
+  background-color: #c1c1c1;
   border-radius: 5px;
   width: 25%;
 }
@@ -275,6 +309,10 @@ footer {
 
 .playhead i.fa-circle-play {
   font-size: 2rem;
+}
+
+.playhead i.fa-circle-play:hover {
+  transform: scale(1.15);
 }
 
 
