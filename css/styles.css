@@ -99,6 +99,13 @@ ul li a:hover {
   color: white;
   cursor: pointer;
 }
+
+.d-block-mb {
+  display: none;
+}
+
+
+
 /* TOP SECTION */
 
 .top-section {
@@ -142,6 +149,7 @@ aside {
   height: 100%;
   /*  */
   color: white;
+  overflow: hidden;
 }
 
 aside img {
@@ -180,6 +188,32 @@ aside img {
   margin-top: auto;
 }
 
+.aside-bottom #download-button {
+  opacity: 0.6;
+  width: 30px;
+  aspect-ratio: 1/1;
+  background-color:unset;
+}
+
+.aside-bottom .timeline {
+  display: inline-block;
+  height: 2px;
+  width: 95%;
+  margin: 0;
+}
+
+.install-app {
+  display: block;
+}
+
+#download-button img {
+  transform: scale(1);
+}
+
+#download-button:hover {
+  opacity: 1;
+}
+
 .aside-bottom .img-container-small {
   display: inline-block;
   background-color: #7d7f837c;
@@ -194,7 +228,7 @@ aside img {
 
 .playlist-list {
   overflow: auto;
-  height: calc(100% - 200px);
+  height: calc(100% - 210px);
 }
 
 /* MAIN */
@@ -217,7 +251,7 @@ main .menu {
 
 .col {
   width: calc(100% / 6);
-  padding: 0 10px;
+  padding: 0 0.6%;
 }
 
 
@@ -322,4 +356,54 @@ footer {
 
 .options i {
   padding: 0 7px;
+}
+
+
+
+
+
+/* RESPOSIVE */
+
+@media (max-width: 1199px) {
+  .col {
+    width: calc(100% / 4);
+  }
+}
+
+
+
+@media (max-width: 860px) {
+  .col {
+    width: calc(100% / 2);
+  }
+}
+
+
+@media (max-width: 680px) {
+
+
+  main {
+    width: calc(100% - 70px);
+  }
+  header {
+    width: calc(100% - 70px);
+  }
+  aside {
+    width: 70px;
+  }
+
+  .d-none-mb, .aside-bottom .timeline {
+    display: none;
+  }
+
+
+  .d-block-mb {
+    display: block;
+    width: 30px;
+  }
+
+  .logo {
+    height: unset;
+    margin: 15px 0;
+  }
 }

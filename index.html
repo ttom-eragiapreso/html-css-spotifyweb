@@ -20,7 +20,8 @@
     <aside>
 
       <div class="logo d-flex justify-content-center align-items-center">
-        <img src="./spotify/img/logo.svg" alt="logo">
+        <img src="./spotify/img/logo.svg" alt="logo" class="d-none-mb">
+        <img src="./spotify/img/logo-small.svg" alt="small logo" class="d-block-mb">
       </div>
 
       <div class="aside-main d-flex f-column">
@@ -29,26 +30,26 @@
 
           <div class="current">
             <img src="./spotify/img/home.svg" alt="home">
-            <span>Home</span>
+            <span class="d-none-mb">Home</span>
           </div>
 
           <div class="inactive">
             <img src="./spotify/img/search.svg" alt="magnifying glass">
-            <span>Cerca</span>
+            <span class="d-none-mb">Cerca</span>
           </div>
 
           <div class="inactive">
             <img src="./spotify/img/libreria.svg" alt="library">
-            <span>La tua libreria</span>
+            <span class="d-none-mb">La tua libreria</span>
           </div>
 
-          <h3>Playlist</h3>
+          <h3 class="d-none-mb">Playlist</h3>
 
-          <div class="inactive">
+          <div class="inactive d-none-mb">
             <i class="fa-regular fa-square-plus"></i>
             <span>Crea Playlist</span>
           </div>
-          <div class="playlist-list">
+          <div class="playlist-list d-none-mb">
 
             <div class="inactive">
               <span>Nome Playlist</span>
@@ -86,14 +87,24 @@
 
 
         <div class="aside-bottom">
+          <div class="install-app">
 
-          <img src="./spotify/img/download.svg" alt="download" class="inactive">
-          <span class="inactive">Installa app</span>
-          <hr>
-          <div class="img-container-small round">
-            <img src="./spotify/img/profile.svg" alt="profile">
+            <div class="img-container-small d-flex justify-content-center align-items-center" id="download-button">
+              <img src="./spotify/img/download.svg" alt="download" class="inactive">
+  
+            </div>
+            <span class="inactive d-none-mb">Installa app</span>
+
           </div>
-          <span><strong>John Doe</strong></span>
+          <span class="timeline d-none-mb"></span>
+          <div class="user-name">
+
+            <div class="img-container-small round">
+              <img src="./spotify/img/profile.svg" alt="profile">
+            </div>
+            <span class="d-none-mb"><strong>John Doe</strong></span>
+
+          </div>
 
         </div>
 
