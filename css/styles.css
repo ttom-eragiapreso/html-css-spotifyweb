@@ -101,11 +101,12 @@ ul li a {
 
 header {
   width: calc(100% - 240px);
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(10, 10, 10, 0.9);
   height: var(--header-height);
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -161,6 +162,7 @@ aside img {
 
 .playlist-list {
   overflow: auto;
+  height: calc(100% - 200px);
 }
 
 /* MAIN */
@@ -197,11 +199,27 @@ main h2, main p  {
   padding-left: 10px;
 }
 
+.card{
+  position: relative;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: rgba(10, 10, 10, 0.6);
+  display: none;
+}
 
+.overlay .fa-circle-play {
+  font-size: 3.5rem;
+}
 
-
-
+.img-container:hover .overlay {
+  display: flex;
+}
 
 /* FOOTER */
 
