@@ -288,20 +288,32 @@ footer {
   background-color: #282828;
   /*  */
   color: white;
-  padding: 0 10px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: .7rem;
+
 }
 
 
 .footer-left, .footer-right {
   height: inherit;
-  width: 15%;
+  width: 10%;
+  min-width: 200px;
 }
 
 .footer-left .img-small {
-  width: 60px;
+  min-width: 25%;
+}
+
+.footer-left .song-info {
+  min-width: 50%;
+  padding: 0 8px;
+}
+
+.footer-left .song-actions {
+  min-width: 25%;
 }
 
 .footer-left .song-actions i {
@@ -314,7 +326,7 @@ footer {
 
 .footer-center {
   height: inherit;
-  width: 50%;
+  max-width: 30%;
 }
 
 .timeline {
@@ -337,8 +349,8 @@ footer {
 }
 
 .playhead i {
-  font-size: 1.3rem;
-  padding: 0 25px;
+  font-size: 1rem;
+  padding: 0 5%;
 }
 
 .playhead i.fa-circle-play {
@@ -351,14 +363,16 @@ footer {
 
 
 .footer-right .timeline {
-  width: 120px;
+  min-width: 120px;
 }
 
 .options i {
   padding: 0 7px;
 }
 
-
+.options {
+  width: 50%;
+}
 
 
 
