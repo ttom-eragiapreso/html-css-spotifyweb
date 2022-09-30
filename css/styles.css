@@ -192,9 +192,7 @@ aside img {
   vertical-align: middle;
 }
 
-.aside-bottom {
-  margin-top: auto;
-}
+
 
 .aside-bottom #download-button {
   opacity: 0.6;
@@ -235,9 +233,14 @@ aside img {
 }
 
 .playlist-list {
+  height: calc(100vh - 525px);
   overflow: auto;
-  height: calc(100% - 210px);
 }
+
+.playlist-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 
 /* MAIN */
 
