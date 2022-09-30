@@ -108,8 +108,9 @@ ul li a:hover {
   content: '';
   display: block;
   width: 30%;
-  margin: 0 auto;
-  box-shadow: 0px 11px 0 1px green;
+  margin: 11px auto;
+  /* box-shadow: 0px 11px 0 1px green; */
+  border-bottom: 1px solid green;
 }
 
 
@@ -417,7 +418,6 @@ footer {
     display: none;
   }
 
-
   .d-block-mb {
     display: block;
     width: 30px;
@@ -426,5 +426,18 @@ footer {
   .logo {
     height: unset;
     margin: 15px 0;
+  }
+
+  footer {
+    padding: 0 15px;
+  }
+
+  .footer-right .timeline {
+    min-width: 40px;
+    margin-left: 5px;
+  }
+
+  .options i {
+    padding: 0 3px;
   }
 }
