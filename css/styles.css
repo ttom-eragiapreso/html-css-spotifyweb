@@ -4,6 +4,7 @@
 :root {
   --header-height: 100px;
   --inactive-color: #6a6a6a;
+  --progress: 25%
 }
 
 * {
@@ -109,7 +110,6 @@ ul li a:hover {
   display: block;
   width: 30%;
   margin: 11px auto;
-  /* box-shadow: 0px 11px 0 1px green; */
   border-bottom: 1px solid green;
 }
 
@@ -155,7 +155,6 @@ aside {
   width: 240px;
   background-color: black;
   height: 100%;
-  /*  */
   color: white;
   overflow: hidden;
 }
@@ -171,7 +170,6 @@ aside img {
 .aside-main {
   height: calc(100% - var(--header-height));
   padding-bottom: 20px;
-  /* overflow: auto; */
 }
 
 .aside-main img {
@@ -208,9 +206,6 @@ aside img {
   margin: 0;
 }
 
-.install-app {
-  display: block;
-}
 
 #download-button img {
   transform: scale(1);
@@ -233,6 +228,7 @@ aside img {
 }
 
 .playlist-list {
+  margin-top: 20px;
   height: calc(100vh - 525px);
   overflow: auto;
 }
@@ -249,7 +245,7 @@ main {
   background-color: #141922;
   overflow:auto;
   padding: 0 20px;
-  padding-top: calc(var(--header-height) + 10px);
+  padding-top: calc(var(--header-height) + 20px);
   color: white;
 }
 
@@ -297,14 +293,9 @@ main h2, main p  {
 footer {
   height: var(--header-height);
   background-color: #282828;
-  /*  */
   color: white;
   padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: .7rem;
-
 }
 
 
@@ -349,6 +340,25 @@ footer {
   border-radius: 5px;
 }
 
+.timeline:hover .timeline-progress {
+  background-color: lightgreen;
+}
+
+.timeline:hover .timeline-progress .timeline-circle {
+  display: block;
+}
+
+.timeline-circle {
+  position: absolute;
+  right: 0;
+  top: -75%;
+  width: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
 .timeline-progress {
   position: absolute;
   top: 0;
@@ -356,7 +366,7 @@ footer {
   height: 6px;
   background-color: #c1c1c1;
   border-radius: 5px;
-  width: 25%;
+  width: var(--progress);
 }
 
 .playhead i {
